@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru" data-color-mode="dark" data-dark-theme="dark_dimmed"></html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <center><h2>XML и XML-словари в Web</h2></center><br>
+        <ul>
+          <button type="button">
+            <a class="button large" href="index.html">Главная страница</a>
+          </button>
+          <button type="button">
+            <a class="button large" href="xml_1.html">XML</a>
+          </button>
+          <button type="button">
+            <a class="button large" href="xml_dict_1.html">XML-словари</a>
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <ul class="vertical menu align-right">
+      <li><a href="index.html">Главная страница</a></li>
+      <li><a href="xml_1.html">XML</a></li>
+      <li><a href="xml_dict_1.html">XML-словари</a></li>
+    </ul>
+    <main>
+      <br><br>
+      <section>
+        <p>Так как XML является достаточно абстрактным языком, были разработаны словари XML.</p>
+        <p>Словарь позволяет разработчикам договориться о некотором конечном наборе имен тегов и атрибутов этих тегов. Одним из первых словарей появился XHTML, который понимают большинство браузеров. XHTML часто используют для хранения и редактирования контента в CMS.</p>
+        <p>Были созданы более специализированные словари, например протокол передачи данных SOAP, который не является человеко-ориентированным и достаточно трудно читаем. Есть коммерческие словари, такие как CommerceML, xCBL и cXML которые используются для передачи данных, ориентированных на торговую деятельность, эти словари включают в себя описание системы заказов, поставщиков, продуктов и прочее.</p>
+        <p>Обычно, описывая какой-либо документ, человек для себя придумывает некоторый словарь, который потом описывается посредством DTD или просто объясняется «на пальцах» заинтересованным лицам.</p>
+        <p>Одним из интересных словарей, получивших широкое распространение, является FB2 — словарь, описывающий формат книги, со всевозможными сносками, цитатами, даже картинками.</p>
+      </section>
+      <section>
+        <p>Далее подробнее рассмотрим распространенные словари:</p>
+        <center><h3>MathML</h3></center>
+        <p>MathML (язык математической разметки) — язык разметки на основе XML для представления математических символов и формул в веб-документах. Разрабатывается и пропагандируется математической группой W3C.<br><br>
+          MathML учитывает не только представление, но и смысловое содержание элементов формул, в связи с чем разделён на две ветви — Presentation MathML и Content MathML. Также разрабатывается система разметки математической семантики OpenMath, призванная дополнить MathML смысловой информацией.</p>
+        <p><bold>В HTML5 MathML стал частью языка разметки</bold></p>
+        <p>Формула с помощью MathML:</p>
+        <div class="mw-highlight mw-highlight-lang-xml mw-content-ltr" dir="ltr"><pre><span></span><span class="nt">&lt;math</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1998/Math/MathML"</span> <span class="na">display=</span><span class="s">"block"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;mi&gt;</span>x<span class="nt">&lt;/mi&gt;</span> <span class="nt">&lt;mo&gt;</span>=<span class="nt">&lt;/mo&gt;</span>
+          <span class="nt">&lt;mrow&gt;</span>
+            <span class="nt">&lt;mfrac&gt;</span>
+              <span class="nt">&lt;mrow&gt;</span>
+                <span class="nt">&lt;mo&gt;</span>−<span class="nt">&lt;/mo&gt;</span>
+                <span class="nt">&lt;mi&gt;</span>b<span class="nt">&lt;/mi&gt;</span>
+                <span class="nt">&lt;mo&gt;</span>±<span class="nt">&lt;/mo&gt;</span>
+                <span class="nt">&lt;msqrt&gt;</span>
+                  <span class="nt">&lt;msup&gt;&lt;mi&gt;</span>b<span class="nt">&lt;/mi&gt;&lt;mn&gt;</span>2<span class="nt">&lt;/mn&gt;&lt;/msup&gt;</span>
+                  <span class="nt">&lt;mo&gt;</span>−<span class="nt">&lt;/mo&gt;</span>
+                  <span class="nt">&lt;mn&gt;</span>4<span class="nt">&lt;/mn&gt;&lt;mi&gt;</span>a<span class="nt">&lt;/mi&gt;&lt;mi&gt;</span>c<span class="nt">&lt;/mi&gt;</span>
+                <span class="nt">&lt;/msqrt&gt;</span>
+              <span class="nt">&lt;/mrow&gt;</span>
+              <span class="nt">&lt;mrow&gt;</span> <span class="nt">&lt;mn&gt;</span>2<span class="nt">&lt;/mn&gt;&lt;mi&gt;</span>a<span class="nt">&lt;/mi&gt;</span> <span class="nt">&lt;/mrow&gt;</span>
+            <span class="nt">&lt;/mfrac&gt;</span>
+          <span class="nt">&lt;/mrow&gt;</span>
+          <span class="nt">&lt;mtext&gt;</span>.<span class="nt">&lt;/mtext&gt;</span>
+        <span class="nt">&lt;/math&gt;</span>
+        </pre></div>
+        <p>Отобразит это:</p>
+        <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/00c22777378f9c594c71158fea8946f2495f2a28" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:350px; height:170px;" alt="x={\frac {-b\pm {\sqrt {b^{2}-4ac}}}{2a}}">
+      </section>
+      <section>
+        <center><h3>XHTML</h3></center>
+        <center><img src="https://sitechecker.pro/wp-content/uploads/2018/01/Knowledge-base-part-3_what-is-xhtml.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb pT0Scc KAlRDb" alt="Что такое XHTML (Extensible Hypertext Markup Language)?" data-noaft="1" style="width: 700px; height: 350px; margin: 9.96938px 0px;"></center>
+        <p>XHTML (англ. extensible hypertext markup language — расширяемый язык гипертекстовой разметки) — семейство языков разметки веб-страниц на основе XML, повторяющих и расширяющих возможности HTML. Спецификации XHTML 1.0 и XHTML 1.1 являются рекомендациями консорциума Всемирной паутины. Развитие XHTML остановлено; новые версии XHTML не выпускаются; рекомендуется использовать HTML.
+
+          Главное отличие XHTML от HTML заключается в обработке документа. Документы XHTML обрабатываются своим модулем (парсером) аналогично документам XML. В процессе этой обработки ошибки, допущенные разработчиками, не исправляются.
+          
+          XHTML соответствует спецификации SGML, поскольку XML является её подмножеством. HTML обладает множеством особенностей в процессе обработки и фактически перестал относиться к семейству SGML, что и закреплено в черновике спецификации HTML 5.</p>
+        <p>Различия между HTML и XHTML</p>
+        <ul>
+          <li>все элементы должны быть закрыты. Теги, которые не имеют закрывающего тега (например, <code>&lt;img&gt;</code> или <code>&lt;br&gt;</code>), должны иметь на конце <code>/</code> (например, <code>&lt;br&nbsp;/&gt;</code>);</li>
+          <li>логические атрибуты записываются в развёрнутой форме. Например, следует писать <code>&lt;option selected="selected"&gt;</code> или <code>&lt;td nowrap="nowrap"&gt;</code>;</li>
+          <li>имена тегов и атрибутов должны быть записаны строчными буквами (например, <code>&lt;img alt="" /&gt;</code> вместо <code>&lt;IMG ALT="" /&gt;</code>);</li>
+          <li>XHTML гораздо строже относится к ошибкам в коде; &lt; и &amp; везде, даже в URL, должны замещаться &amp;lt; и &amp;amp; соответственно. По рекомендации W3C браузеры, встретив ошибку в XHTML, должны сообщить о ней и не обрабатывать документ. Для HTML браузеры должны были попытаться понять, что хотел сказать автор;</li>
+          <li>кодировкой по умолчанию является UTF-8 (в отличие от HTML, где кодировкой по умолчанию является ISO 8859-1.)</li>
+        </ul>
+      </section>
+      <nav aria-label="Pagination">
+        <ul class="pagination text-center">
+          <li class="pagination-previous"><a href="xml_dict_1.html" aria-label="Next page">Назад</a></li>
+          <li class="pagination-next"><a href="xml_dict_2.html" aria-label="Next page">Вперед</a></li>
+        </ul>
+      </nav>
+    </main>
+    <footer>
+      <br><br>
+      <p>Сайтик сделала Катюша (я (me))</p>
+    </footer>
+  </body>
+</html>
